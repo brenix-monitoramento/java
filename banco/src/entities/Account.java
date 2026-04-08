@@ -3,7 +3,7 @@ package entities;
 
 public class Account {
     private String name;
-    private double balance = 0.0;
+    private static final double BALANCE = 0.0;
 
     public void setName(String name){
         this.name = name;
@@ -14,6 +14,6 @@ public class Account {
     }
 
     public double getBalance(){
-        return this.balance;
+        return BALANCE;
     }
 }
